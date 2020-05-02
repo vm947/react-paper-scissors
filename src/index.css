@@ -13,16 +13,20 @@ code {
 }
 
 .container-div {
-  width: 25%;
+  width: 300px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .playerPic {
   height: 300px;
   width: 300px;
-  margin-top: 30px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .middle-div {
@@ -31,8 +35,8 @@ code {
   align-items: center;
   font-size: 4rem;
   height: 300px;
-  width: 300px;
-  margin-top: 30px;
+  width: 350px;
+  margin-top: 10px;
   background-color: lightsalmon;
 }
 
@@ -53,7 +57,52 @@ code {
 }
 
 .big-container {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .middle-div {
+    height: 125px;
+    width: 175px;
+    margin:0;
+    font-size: 2rem;
+}
+  .playerPic {
+    height: 150px;
+    width: 150px;
+    margin-top: 25px 0 25px 0;
+  }
+  .startButton{
+    margin: 0
+  }
+ .big-container{
+   margin-top: 0;
+ }
+}
+
+@media only screen and (max-width: 600px) {
+  .middle-div {
+    height: 125px;
+    width: 175px;
+    margin:0;
+    font-size: 2rem;
+}
+  .playerPic {
+    height: 150px;
+    width: 150px;
+    margin-top: 25px 0 25px 0;
+  }
+  .startButton{
+    margin: 0
+  }
+ .big-container{
+   margin-top: 0;
+ }
 }
